@@ -6,5 +6,4 @@ group: edge
 script: 
   - sudo apt-get update 
   - sudo apt install qemu-kvm libvirt-daemon-system bridge-utils virt-manager
-  - sudo addgroup libvirtd
   - sudo adduser `id -un` libvirtd
