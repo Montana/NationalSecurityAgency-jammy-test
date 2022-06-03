@@ -1,6 +1,10 @@
 dist: jammy
+language: generic
 vm:
   size: 2x-large
 group: edge
 script: 
-  - sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+  - sudo apt-get update 
+  - sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager
+  - sudo addgroup libvirtd
+  - sudo adduser `id -un` libvirtd
