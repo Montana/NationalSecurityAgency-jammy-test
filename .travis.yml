@@ -7,3 +7,4 @@ script:
   - sudo apt-get update 
   - sudo apt install qemu-kvm libvirt-daemon-system bridge-utils virt-manager
   - sudo adduser `id -un` libvirtd
+  - cat /proc/version
